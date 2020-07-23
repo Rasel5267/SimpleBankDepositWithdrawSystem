@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Sonali Bank Ltd::Simple site</title>
+  </head>
+  <body>
+    <div id="login-area">
+        <h1 class="text-center">Welcome to Sonali Bank</h1>
+        <div class="submit-area mt-5">
+            <h4 class="py-3">Login</h4>
+            <input type="email" class="form-control" placeholder="Email">
+            <br>
+            <input type="password" class="form-control" placeholder="password">
+            <br>
+            <button class="btn btn-success" id="login">Enter</button>
+        </div>
+    </div>
+    <div id="transaction-area" >
+        <div class="row">
+            <div class="col-md-4">
+                <div class="deposit status">
+                    <h5>Deposit</h5>
+                    <h2>$ <span id="currentDeposit">00</span></h2>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="withdraw status">
+                    <h5>Withdraw</h5>
+                    <h2>$ <span id="currentWithdraw">00</span></h2>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="balance status">
+                    <h5>Balance</h5>
+                    <h2>$ <span id="currentBalance">1240</span></h2>
+                </div>
+            </div>
+        </div>
+        <div class="row my-5">
+            <div class="col-md-6">
+                <div class="submit-area">
+                    <h2>Deposit</h2>
+                    <br>
+                    <input type="text" class="form-control" placeholder="$ amount you want to deposit" id="deposit-amount">
+                    <br>
+                    <button class="btn btn-success" id="deposit-btn">Deposit</button>
+                </div>
+            </div>
+            <div class="col-md-6 ">
+                <div class="submit-area">
+                    <h2>Withdraw</h2>
+                    <br>
+                    <input type="text" class="form-control" placeholder="$ amount you want to withdraw" id="withdraw-amount">
+                    <br>
+                    <button class="btn btn-success" id="withdraw-btn">Withdraw</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- script links -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
